@@ -5,7 +5,12 @@ const SITE = {
   googlePlay: 'https://play.google.com/store/apps/details?id=com.ceptekidostum.app',
   email: '',               // ör. destek@alanadin.com
   developer: '',           // ör. Ad Soyad veya şirket adı (gizlilik politikası için)
-  social: { youtube: '', instagram: '', tiktok: '', facebook: '' },
+  social: {
+    youtube: 'https://www.youtube.com/@ceptekidostum',
+    instagram: 'https://www.instagram.com/ceptekidostum',
+    tiktok: 'https://www.tiktok.com/@ceptekidostum',
+    facebook: 'https://www.facebook.com/ceptekidostum',
+  },
 };
 // ==========================================================================
 
@@ -26,10 +31,10 @@ const ICON = {
   play: '<svg viewBox="0 0 24 24"><path fill="#00d4ff" d="M3.6 2.2 13.4 12 3.6 21.8a1.6 1.6 0 0 1-.6-1.3V3.5c0-.5.2-1 .6-1.3"/><path fill="#00f076" d="m16.6 8.8-3.2 3.2-9.8-9.8.3-.1c.5-.2 1-.2 1.5.1z"/><path fill="#ff3a44" d="M13.4 12l3.2 3.2-11.2 6.6c-.5.3-1 .3-1.5.1l-.3-.1z"/><path fill="#ffd400" d="m16.6 8.8 3.8 2.2c1 .6 1 1.9 0 2.4l-3.8 2.2-3.2-3.2z"/></svg>',
   apple: '<svg viewBox="0 0 384 512"><path fill="#fff" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>',
   heart: '<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.2 0 3.6 1.3 4.3 2.4.7-1.1 2.1-2.4 4.3-2.4 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21"/></svg>',
-  yt: '<svg viewBox="0 0 24 24"><path fill="#fff" d="M9.6 8.2v7.6l6.6-3.8z"/></svg>',
-  ig: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.3" fill="#fff" stroke="none"/></svg>',
-  tt: '<svg viewBox="0 0 24 24"><path fill="#25f4ee" d="M15.8 3.6c.4 2 1.7 3.4 3.7 3.7v2.6c-1.4 0-2.6-.4-3.7-1.1v5.6a5 5 0 1 1-5-5h.6v2.7a2.4 2.4 0 1 0 1.8 2.3V3.6z" transform="translate(-.7 .5)"/><path fill="#fe2c55" d="M15.8 3.6c.4 2 1.7 3.4 3.7 3.7v2.6c-1.4 0-2.6-.4-3.7-1.1v5.6a5 5 0 1 1-5-5h.6v2.7a2.4 2.4 0 1 0 1.8 2.3V3.6z" transform="translate(.7 -.3)"/><path fill="#fff" d="M15.8 3.6c.4 2 1.7 3.4 3.7 3.7v2.6c-1.4 0-2.6-.4-3.7-1.1v5.6a5 5 0 1 1-5-5h.6v2.7a2.4 2.4 0 1 0 1.8 2.3V3.6z"/></svg>',
-  fb: '<svg viewBox="0 0 24 24"><path fill="#fff" d="M13.6 21v-7.4h2.6l.4-3h-3V8.7c0-.9.3-1.5 1.5-1.5h1.6V4.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.9v3h2.6V21z"/></svg>',
+  yt: '<svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4.2" fill="#fff"/><path fill="#ff0033" d="M10 8.7v6.6l5.7-3.3z"/></svg>',
+  ig: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.3" cy="6.7" r="1.25" fill="#fff" stroke="none"/></svg>',
+  tt: (() => { const d = 'M16.6 2.5h-3.1v12.6a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .8.1V9.3a5.9 5.9 0 1 0 5 5.8V8.7a7.4 7.4 0 0 0 4.3 1.4V7a4.3 4.3 0 0 1-4.3-4.5'; return `<svg viewBox="0 0 24 24"><path fill="#25f4ee" transform="translate(-.8 -.6)" d="${d}"/><path fill="#fe2c55" transform="translate(.8 .6)" d="${d}"/><path fill="#fff" d="${d}"/></svg>`; })(),
+  fb: '<svg viewBox="0 0 24 24"><path fill="#fff" d="M13.4 22v-8.4h2.9l.4-3.4h-3.3V8.1c0-1 .3-1.6 1.7-1.6h1.8V3.4c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.5H7v3.4h2.9V22z"/></svg>',
   check: '<svg viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
   prev: '<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg>',
   next: '<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></svg>',
@@ -190,7 +195,14 @@ function slider() {
 // ---- Telefondaki ekranlar sırayla değişsin ----
 function phone() {
   const sc = $$('.phone .scr'); if (sc.length < 2) return;
-  let k = 0; setInterval(() => { sc[k].classList.remove('on'); k = (k + 1) % sc.length; sc[k].classList.add('on'); }, 3200);
+  // next screen is loaded before it fades in (screens are lazy)
+  const ready = (i) => { const im = sc[i]; im.loading = 'eager'; return im.complete && im.naturalWidth > 0; };
+  let k = 0; ready(1);
+  setInterval(() => {
+    const n = (k + 1) % sc.length;
+    if (!ready(n)) return;
+    sc[k].classList.remove('on'); k = n; sc[k].classList.add('on'); ready((k + 1) % sc.length);
+  }, 2800);
 }
 
 // ---- SSS açılır kapanır ----
